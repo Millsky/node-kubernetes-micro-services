@@ -1,3 +1,4 @@
+#!/bin/bash
 # This is an sh file meant to allow the user to access a running redis-master
 # When developing an application
 # Get the password into an env var

@@ -1,3 +1,4 @@
+#!/bin/bash
 # Install keycloak for authentication
 helm install --name keycloak -f key-cloak-values.yaml stable/keycloak
 # Install redis to store the tokens over a session

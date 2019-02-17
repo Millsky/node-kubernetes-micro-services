@@ -1,0 +1,11 @@
+keycloak:
+  username: "admin"
+  password: "admin"
+  persistence:
+    dbVendor: "postgres"
+    deployPostgres: true
+
+postgresql:
+  postgresUser: "admin"
+  postgresPassword: "admin"
+  postgresDatabase: "keycloak"

@@ -27,14 +27,14 @@ const keycloak = new keycloakConnect({
   store,
 });
 
-app.use(keycloak.middleware())
+app.use(keycloak.middleware());
 
 const pets = function (req, res) {
   res.json({
     result: JSON.stringify(JSON.parse(req.session['keycloak-token']), null, 4),
     event: '1. Authentication\n2. Login'
   });
-}
+};
 
 
 app.get('/auth/pets', keycloak.protect(), pets);
